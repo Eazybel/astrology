@@ -15,8 +15,15 @@ const para = document.getElementById("para");
 const date =document.getElementById("date");
 
 btn.onclick = function (){
-if (sept.checked && (date.value > 21 && date.value <30) && (date.value < 19 && date.value >0)) {
-    para.textContent = "Aries";
+if (sept.checked) {
+    switch (date.value) {
+        case "1":
+            para.textContent = "correct";
+            break;
+    
+        default:
+            break;
+    }
 } else if (oct.checked){
     para.textContent = "october";
 }
