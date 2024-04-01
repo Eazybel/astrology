@@ -12,10 +12,11 @@ const jul = document.getElementById("jul");
 const aug = document.getElementById("aug");
 const btn = document.getElementById("btn");
 const para = document.getElementById("para");
+const date =document.getElementById("date");
 
 btn.onclick = function (){
-if (sept.checked) {
-    para.textContent = "september";
+if (sept.checked && (date.value > 21 && date.value <30) && (date.value < 19 && date.value >0)) {
+    para.textContent = "Aries";
 } else if (oct.checked){
     para.textContent = "october";
 }
